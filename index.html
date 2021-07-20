@@ -320,18 +320,18 @@
                         </div>
                     </div>
                     <div class="contactForm">
-                        <form>
+                        <form id="contact-form" method="post" action="contact-form-handler.php">
                             <h2>Deja un mensaje.</h2>
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
+                                <input type="text" name="nombre" required="required">
                                 <span>Nombre Completo</span>
                             </div>
                             <div class="inputBox">
-                                <input type="text" name="" required="required">
+                                <input type="text" name="email" required="required">
                                 <span>Correo</span>
                             </div>
                             <div class="inputBox">
-                                <textarea required="required"></textarea>
+                                <textarea name="message" required="required"></textarea>
                                 <span>Tu Mensaje...</span>
                             </div>
                             <div class="inputBox">
