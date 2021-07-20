@@ -409,6 +409,7 @@ footer .marca-logo{
     align-items: center;
     justify-content: center;
     padding: 30px 0;
+    padding-bottom: 40px;
 }
 /* Propiedades del logo mostrado en la sección Footer*/
 .marca-logo img{
@@ -417,14 +418,14 @@ footer .marca-logo{
 
 .contact{    
     position: relative;    
-    padding: 20px 0;
+    padding: 10px 0;
     display: flex;
-    justify-content: space-around;    
-    align-items: center;    
+    justify-content: space-evenly;    
+    align-items: center;      
 }
 
 .container{
-    width: 80%;
+    width: 75%;        
     display: flex;    
     justify-content: center; 
     align-items: center; 
@@ -435,6 +436,10 @@ footer .marca-logo{
     width: 40%;
     display: flex;
     flex-direction: column;
+}
+
+.container .contactInfo h1{
+    color: #fff  ;
 }
 
 .container .contactInfo .box{
@@ -478,10 +483,9 @@ footer .marca-logo{
     color: #fff;    
 }
 
-.container .contactForm{
-    width: 30%;
-    padding: 40px;
-    background: #fff;
+.container .inbound-form-wrapper{
+    width: 40%;        
+    background: #fff;    
 }
 
 .contactForm h2{
@@ -490,6 +494,7 @@ footer .marca-logo{
     font-weight: 500;
 }
 
+/*
 .contactForm .inputBox{    
     position: relative;
     width: 100%;
@@ -537,7 +542,7 @@ footer .marca-logo{
     padding: 10px;
     font-size: 18px;
 }
-
+*/
 
 .quoteCopy{
     display: flex;
