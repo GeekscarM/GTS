@@ -1,0 +1,393 @@
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    body {
+        /* background: linear-gradient(to right, #006572, #479099)*/
+        background: linear-gradient(to right, #003038, #03404b, #00424e)
+    }
+    
+    .resume {
+        width: 1100px;
+        background: #fff;
+        margin: 25px auto;
+        display: flex;
+        border-radius: 15px;
+    }
+    
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding-bottom: 10px;
+        color: #9153c9;
+        position: relative;
+        text-align: left;
+        margin-bottom: 15px;
+        -webkit-text-stroke: .25px black;
+    }
+    
+    .title:before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100px;
+        height: 3px;
+        background: #9153c9;
+    }
+    
+    .pb {
+        padding-bottom: 20px;
+    }
+    
+    .left {
+        background: #292b2f;
+        width: 300px;
+        padding: 0 10px;
+    }
+    
+    .left .img_holder {
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .left .img_holder img {
+        width: 200px;
+        border-radius: 30px;
+    }
+    
+    .left .icon {
+        font-size: 20px;
+        color: #ffffff;
+    }
+    
+    .left .text {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    .link {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    
+    .contact .li_wrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .contact .li_wrap .icon {
+        width: 40px;
+        height: 40px;
+        background: #797979;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+    
+    .contact .li_wrap .text {
+        width: calc(100% - 50px);
+        word-break: break-word;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 12px;
+    }
+    
+    .contact .li_wrap:hover .text {
+        color: #9153c9;
+        font-weight: bold;
+    }
+    
+    .link:hover {
+        color: #9153c9;
+        font-weight: bold;
+    }
+    
+    .right {
+        width: calc(100% - 300px);
+    }
+    /*Contenedor del lado derecho*/
+    
+    .skills ul,
+    .education ul,
+    .education__cursos ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .skills .li_wrap {
+        width: 130px;
+        height: 75px;
+        margin-bottom: 5px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #797979;
+    }
+    
+    .skills .li_wrap .text,
+    .education .li_wrap .text,
+    .education__cursos .li_wrap .text {
+        margin-top: 5px;
+    }
+    
+    .skills .li_wrap .text {
+        font-weight: 700;
+    }
+    
+    .education .li_wrap {
+        width: 270px;
+        height: 75px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #797979;
+    }
+    
+    .education__cursos .li_wrap {
+        width: 130px;
+        height: 75px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #797979;
+    }
+    
+    .education .li_wrap .text {
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        font-size: 14px;
+    }
+    
+    .education__cursos .li_wrap .text {
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        font-size: 12px;
+    }
+    
+    .education .li_wrap .icon,
+    .education__cursos .li_wrap .icon {
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+    }
+    
+    .skills .li_wrap:hover {
+        background: #000000;
+    }
+    
+    .skills .li_wrap:hover .text {
+        color: #ffffff;
+    }
+    
+    .skills .li_wrap:hover .icon {
+        color: #ffffff;
+    }
+    
+    .education .li_wrap:hover,
+    .education__cursos .li_wrap:hover {
+        background: #000000;
+    }
+    
+    .education .li_wrap:hover .text,
+    .education__cursos .li_wrap:hover .text {
+        color: #ffffff;
+    }
+    
+    .education .li_wrap:hover .icon,
+    .education__cursos .li_wrap:hover .icon {
+        color: #ffffff;
+    }
+    
+    .header {
+        background: #292b2f;
+        padding: 15px 30px;
+        color: #ffffff;
+        height: 240px;
+    }
+    
+    .header .name {
+        font-size: 45px;
+        font-weight: 700;
+        color: #ffffff;
+        -webkit-text-stroke: 2px #641ca3;
+    }
+    
+    .header .role {
+        font-weight: 300;
+        font-size: 20px;
+    }
+    
+    .header .about {
+        margin-top: 20px;
+        line-height: 26px;
+    }
+    
+    .title_right {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding-bottom: 10px;
+        color: #641ca3;
+        position: relative;
+        text-align: right;
+        margin-bottom: 15px;
+        margin-top: 30px;
+        -webkit-text-stroke: .5px black;
+    }
+    
+    .title_right:before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 100px;
+        height: 3px;
+        background: #641ca3;
+    }
+    
+    .right_inner {
+        padding: 30px;
+        color: #292b2f
+    }
+    
+    .right_inner .li_wrap {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    
+    .right_inner .li_wrap .date {
+        width: 125px;
+        color: #9153c9;
+        font-weight: 700;
+    }
+    
+    .right_inner .li_wrap .info {
+        width: calc(100% - 125px);
+        padding-left: 25px;
+        position: relative;
+    }
+    
+    .right_inner .li_wrap .info_title {
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        color: #9153c9;
+    }
+    
+    .right_inner .li_wrap .info_title:hover {
+        background: #641ca3;
+        color: #ffffff;
+    }
+    
+    .right_inner .li_wrap .info_com {
+        font-weight: 300;
+        font-size: 14px;
+        margin-top: 3px;
+    }
+    
+    .right_inner .li_wrap .info_cont {
+        margin-top: 15px;
+    }
+    
+    .right_inner .li_wrap .info:before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background: #9153c9;
+        border-radius: 50%;
+    }
+    
+    .right_inner .li_wrap .info:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 4px;
+        width: 2px;
+        height: 90%;
+        background: #9153c9;
+    }
+    /**/
+    
+    .right__education_wrap {
+        width: 700px;
+        margin-left: 50px;
+        border-radius: 15px;
+    }
+    
+    .right__education__cursos ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .right__education__cursos .li_wrap .text {
+        margin-top: 10px;
+    }
+    
+    .right__education__cursos .li_wrap {
+        width: 130px;
+        height: 75px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #641ca3;
+    }
+    
+    .right__education__cursos .li_wrap .text {
+        color: #641ca3;
+        text-align: center;
+        display: flex;
+        font-size: 12px;
+    }
+    
+    .right__education__cursos .li_wrap .icon {
+        color: #9153c9;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+    }
+    
+    .right__education__cursos .li_wrap:hover {
+        background: #641ca3;
+    }
+    
+    .right__education__cursos .li_wrap:hover .text {
+        color: #ffffff;
+    }
+    
+    .right__education__cursos .li_wrap:hover .icon {
+        color: #ffffff;
+    }
