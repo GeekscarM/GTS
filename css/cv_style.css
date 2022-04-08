@@ -10,7 +10,7 @@
     body {
         /* background: linear-gradient(to right, #006572, #479099)*/
         /*background: linear-gradient(to right, #003038, #03404b, #00424e)*/
-        background: #2e3033
+        background: #020202
     }
     
     .resume {
@@ -51,7 +51,7 @@
     .left {
         background: #292b2f;
         width: 300px;
-        padding: 0 10px;
+        padding: 0 10px;        
     }
     
     .left .img_holder {
@@ -104,7 +104,7 @@
         word-break: break-word;
         font-weight: bold;
         color: #ffffff;
-        font-size: 12px;
+        font-size: 15px;
     }
     
     .contact .li_wrap:hover .text {
@@ -305,6 +305,8 @@
     .right_inner .li_wrap .info_title:hover {
         background: #641ca3;
         color: #ffffff;
+        border-radius: 15px;
+        text-align: center;          
     }
     
     .right_inner .li_wrap .info_com {
