@@ -63,8 +63,8 @@
     }
     
     .left .img_holder img {
-        width: 85%;        
-        border-radius: 30px;
+        width: 70%;
+        border-radius: 10px;
     }
     
     .left .icon {
