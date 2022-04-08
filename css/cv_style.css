@@ -30,8 +30,7 @@
         color: #9153c9;
         position: relative;
         text-align: left;
-        margin-bottom: 15px;
-        border-radius: 15px;
+        margin-bottom: 15px;        
         -webkit-text-stroke: .25px black;
     }
     
@@ -231,6 +230,7 @@
         padding: 15px 30px;
         color: #ffffff;
         height: 240px;
+        border-radius: 15px;
     }
     
     .header .name {
