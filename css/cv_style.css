@@ -10,7 +10,7 @@
     body {
         /* background: linear-gradient(to right, #006572, #479099)*/
         /*background: linear-gradient(to right, #003038, #03404b, #00424e)*/
-        background: linear-gradient(to right, #000000, #010202, #070e10)
+        background: #292b2f
     }
     
     .resume {
@@ -230,7 +230,6 @@
         padding: 15px 30px;
         color: #ffffff;
         height: 240px;
-        border-radius: 15px;
     }
     
     .header .name {
