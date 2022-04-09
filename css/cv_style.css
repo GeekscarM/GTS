@@ -130,6 +130,7 @@
     .link:hover {
         /*color: #9153c9;*/
         color: #048BC2;
+        text-decoration: underline;
         /*font-weight: bold;*/
     }
     
@@ -344,6 +345,10 @@
         margin-top: 3px;
         text-decoration: none;
     }    
+
+    .right_inner .li_wrap .info_com:hover {
+        text-decoration: underline;
+    }
     
     .right_inner .li_wrap .info_cont {
         color: #036d97;
@@ -426,3 +431,42 @@
     .right__education__cursos .li_wrap:hover .icon {
         color: #ffffff;
     }
+
+    #tooltip{
+        position: relative;
+        cursor: pointer;          
+    }
+
+    #tooltipText{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 13px;
+        background-color: #000;
+        color: #fff;
+        white-space: nowrap;
+        padding: 10px 15px;
+        border-radius: 7px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    
+    #tooltipText::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform:translateX(-50%);
+        border: 15px solid;
+        border-color: #000 #0000 #0000 #0000;        
+    }
+
+    #tooltip:hover #tooltipText{
+        top: -65%;
+        visibility: visible;
+        opacity: 1;
+    }
+   
