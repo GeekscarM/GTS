@@ -376,14 +376,14 @@
         height: 90%;
         background: #036d97;
     }
-    /**/
-    
+
+    /*---*/    
     .right__education_wrap {
         width: 700px;
         margin-left: 50px;
         border-radius: 15px;
     }
-    
+
     .right__education__cursos ul {
         display: inline-flex;
         flex-wrap: wrap;
@@ -432,6 +432,65 @@
         color: #ffffff;
     }
 
+    .right__education__cursos .li_wrap .text {
+        margin-top: 10px;
+    }
+    /*-----*/
+    .right__skills_wrap {
+        width: 700px;
+        margin-left: 50px;
+        border-radius: 15px;
+    }
+
+    .right__skills ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .right__skills .li_wrap_skills .text {
+        margin-top: 10px;
+    }
+    
+    .right__skills .li_wrap_skills {
+        width: 130px;
+        height: 75px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;        
+        background: #036d97;        
+    }
+    
+    .right__skills .li_wrap_skills .text {
+        color: #fff;
+        text-align: center;
+        display: flex;
+        font-size: 12px;
+    }
+    
+    .right__skills .li_wrap_skills .icon {
+        color: #fff;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+    }
+    
+    .right__skills .li_wrap_skills:hover {
+        background: #d4d4d6;
+        border: 2px solid #036d97;
+    }
+    
+    .right__skills .li_wrap_skills:hover .text {
+        color: #036d97;
+    }
+    
+    .right__skills .li_wrap_skills:hover .icon {
+        color: #036d97;
+    }
+
     #tooltip{
         position: relative;
         cursor: pointer;          
@@ -468,5 +527,5 @@
         top: -65%;
         visibility: visible;
         opacity: 1;
-    }
+    }  
    
