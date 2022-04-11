@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
     * {
         margin: 0;
         padding: 0;
@@ -20,20 +20,18 @@
         display: flex;
         border-radius: 15px;
     }
-    
+    /*ENCABEZADOS BARRA IZQUIERDA*/
     .title {
         font-size: 24px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 5px;
         padding-bottom: 10px;
-        /*color: #9153c9;*/
-        /*color: #fff;*/
         color: #048BC2 ;
         position: relative;
         text-align: left;
-        margin-bottom: 15px;        
-        -webkit-text-stroke: .25px black;
+        margin-bottom: 15px;                
+        margin-top: 15px;
     }
     
     .title:before {
@@ -241,23 +239,26 @@
         margin-top: 20px;
         line-height: 26px;        
     }
-    
-    .title_right {
+        
+    .title_historia,
+    .title_habilidades,
+    .title_capacitacion {
         font-size: 24px;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 5px;
-        padding-bottom: 10px;
+        padding-bottom: 10px;        
         /*color: #641ca3;*/
         color: #036d97;
         position: relative;
         text-align: right;
         margin-bottom: 15px;
-        margin-top: 30px;
-        /*-webkit-text-stroke: .5px black;*/        
+        margin-top: 30px;        
     }
-    
-    .title_right:before {
+            
+    .title_historia:before,
+    .title_habilidades:before,
+    .title_capacitacion:before {
         content: "";
         position: absolute;
         top: 30px;
@@ -266,46 +267,58 @@
         height: 3px;
         /*background: #641ca3;*/
         background: #036d97;
+
     }
-    
+    .title_tipo_hab {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 5px;        
+        color: #036d97;
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px;                
+    }
+
     .right_inner {
-        padding: 30px;
-        color: #011dc1;
+        padding: 30px;                
     }
     
-    .right_inner .li_wrap {
+    /*EXPERIENCIA*/
+    /*---------------------------------*/
+    .experiencia_contenedor .li_wrap {
         display: flex;
         margin-bottom: 15px;
     }
     
-    .right_inner .li_wrap .date {
+    .experiencia_contenedor .li_wrap .date {
         width: 125px;
         color: #036d97;
         font-weight: bold;        
         font-weight: 700;
     }
     
-    .right_inner .li_wrap .info {
+    .experiencia_contenedor .li_wrap .info {
         width: calc(100% - 125px);
         padding-left: 25px;
         position: relative;
     }
     
-    .right_inner .li_wrap .info_title {
+    .experiencia_contenedor .li_wrap .info_title {
         text-transform: uppercase;
         font-weight: bold;        
         letter-spacing: 2px;
         color: #036d97;
     }
     
-    .right_inner .li_wrap .info_title:hover {
+    .experiencia_contenedor .li_wrap .info_title:hover {
         background: #048BC2;
         color: #ffffff;
         border-radius: 15px;
         text-align: center;          
     }
     
-    .right_inner .li_wrap .info_com {
+    .experiencia_contenedor .li_wrap .info_com {
         color: #036d97;
         font-weight: 600;
         font-size: 14px;
@@ -313,17 +326,17 @@
         text-decoration: none;
     }    
 
-    .right_inner .li_wrap .info_com:hover {
+    .experiencia_contenedor .li_wrap .info_com:hover {
         text-decoration: underline;
     }
     
-    .right_inner .li_wrap .info_cont {
+    .experiencia_contenedor .li_wrap .info_cont {
         color: #036d97;
         font-weight: 500;
         margin-top: 15px;
     }
     
-    .right_inner .li_wrap .info:before {
+    .experiencia_contenedor .li_wrap .info:before {
         content: "";
         position: absolute;
         top: 3px;
@@ -334,7 +347,7 @@
         border-radius: 50%;
     }
     
-    .right_inner .li_wrap .info:after {
+    .experiencia_contenedor .li_wrap .info:after {
         content: "";
         position: absolute;
         top: 10px;
@@ -344,10 +357,91 @@
         background: #036d97;
     }
 
-    /*CAPACITACION*/    
-    .capacitacion_contenedor {
-        width: 700px;
-        margin-left: 50px;
+    
+
+    /*HABILIDADES*/
+    /*---------------------------------*/
+    .habilidades_contenedor {
+        padding-bottom: 10px;
+    }
+    
+    .habilidades_tecnicas_contenedor{
+        width: 45%;
+        float: left;        
+    }
+
+    .habilidades_laborales_contenedor{
+        width: 45%;
+        float: right;        
+    }
+    
+    .habilidades_tecnicas ul{
+        display: inline-flex;        
+        flex-wrap: wrap;        
+        justify-content: space-around;
+    }
+
+    .habilidades_laborales ul{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+        
+    .habilidades_tecnicas .li_wrap,
+    .habilidades_laborales .li_wrap {
+        width: 90px;
+        height: 75px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #036d97;
+    }
+    
+    .habilidades_tecnicas .li_wrap .text,
+    .habilidades_laborales .li_wrap .text {
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        font-size: 12px;
+    }
+    
+    .habilidades_tecnicas .li_wrap .icon,
+    .habilidades_laborales .li_wrap .icon {
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+    }
+    
+    .habilidades_tecnicas .li_wrap:hover,
+    .habilidades_laborales .li_wrap:hover {
+        background: #d4d4d6;
+        border: 2pt solid #036d97;
+    }
+    
+    .habilidades_tecnicas .li_wrap:hover .text,
+    .habilidades_laborales .li_wrap:hover .text {
+        color: #036d97;
+    }
+    
+    .habilidades_tecnicas .li_wrap:hover .icon,
+    .habilidades_laborales .li_wrap:hover .icon {
+        color: #036d97;
+    }
+
+    .habilidades_tecnicas .li_wrap .text,
+    .habilidades_laborales .li_wrap .text {
+        margin-top: 10px;
+    }
+
+    
+    /*CAPACITACION*/
+    /*---------------------------------*/    
+    .capacitacion_contenedor {        
+        margin: 0 auto;        
         border-radius: 15px;
     }
 
@@ -356,7 +450,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     .capacitacion_cursos .li_wrap .text {
         margin-top: 10px;
     }
@@ -403,69 +497,8 @@
         margin-top: 10px;
     }
 
-    /*HABILIDADES TÉCNICAS*/    
-    .habilidades_contenedor {
-        width: 700px;
-        margin-left: 50px;
-        border-radius: 15px;
-    }
-
-    .habilidades_tecnicas ul {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .habilidades_tecnicas .li_wrap .text {
-        margin-top: 10px;
-    }
-    
-    .habilidades_tecnicas .li_wrap {
-        width: 130px;
-        height: 75px;
-        margin-bottom: 10px;
-        border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: #036d97;
-    }
-    
-    .habilidades_tecnicas .li_wrap .text {
-        color: #ffffff;
-        text-align: center;
-        display: flex;
-        font-size: 12px;
-    }
-    
-    .habilidades_tecnicas .li_wrap .icon {
-        color: #ffffff;
-        text-align: center;
-        display: flex;
-        font-size: 20px;
-    }
-    
-    .habilidades_tecnicas .li_wrap:hover {
-        background: #d4d4d6;
-        border: 2pt solid #036d97;
-    }
-    
-    .habilidades_tecnicas .li_wrap:hover .text {
-        color: #036d97;
-    }
-    
-    .habilidades_tecnicas .li_wrap:hover .icon {
-        color: #036d97;
-    }
-
-    .habilidades_tecnicas .li_wrap .text {
-        margin-top: 10px;
-    }
-
-    
-
-    /*TOOLTIP*/    
+    /*TOOLTIP*/
+    /*---------------------------------*/    
     #tooltip{
         position: relative;
         cursor: pointer;          
@@ -487,7 +520,7 @@
         opacity: 0;
         transition: opacity 0.5s ease;
     }
-    
+
     #tooltipText::before {
         content: "";
         position: absolute;
