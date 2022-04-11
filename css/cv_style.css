@@ -420,16 +420,19 @@
     .habilidades_laborales .li_wrap:hover {
         background: #d4d4d6;
         border: 2pt solid #036d97;
+        cursor: default;
     }
     
     .habilidades_tecnicas .li_wrap:hover .text,
     .habilidades_laborales .li_wrap:hover .text {
         color: #036d97;
+        cursor: default;
     }
     
     .habilidades_tecnicas .li_wrap:hover .icon,
     .habilidades_laborales .li_wrap:hover .icon {
         color: #036d97;
+        cursor: default;
     }
 
     .habilidades_tecnicas .li_wrap .text,
@@ -483,14 +486,17 @@
     
     .capacitacion_cursos .li_wrap:hover {
         background: #036d97;
+        cursor: default;
     }
     
     .capacitacion_cursos .li_wrap:hover .text {
         color: #ffffff;
+        cursor: default;
     }
     
     .capacitacion_cursos .li_wrap:hover .icon {
         color: #ffffff;
+        cursor: default;
     }
 
     .capacitacion_cursos .li_wrap .text {
@@ -535,5 +541,6 @@
         top: -65%;
         visibility: visible;
         opacity: 1;
+        cursor: default;
     }  
    
