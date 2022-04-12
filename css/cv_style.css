@@ -12,7 +12,7 @@
         /*background: linear-gradient(to right, #003038, #03404b, #00424e)*/
         background: linear-gradient(to right, rgb(110, 110, 110), #4b4b4b )
     }
-    
+
     .resume {
         width: 1100px;
         background: #fff;
@@ -230,7 +230,16 @@
     .header .role {
         font-weight: 700;
         font-size: 17px;
-        padding-top: 5px;        
+        padding-top: 5px;                         
+    }
+
+    .header .role a{
+        text-decoration: none!important;      
+        color: #ffffff;   
+    }
+
+    .header .role:hover{
+        text-decoration: underline;
     }
     
     .header .about {
