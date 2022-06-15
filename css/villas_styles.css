@@ -412,7 +412,7 @@ footer ul li a:hover {
 
 /* ================== MEDIA QUERIES (TABLETS) ================== */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1500px) {
     .container {
         width: var(--container-width-md);
     }
