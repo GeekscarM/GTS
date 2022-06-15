@@ -412,7 +412,7 @@ footer ul li a:hover {
 
 /* ================== MEDIA QUERIES (TABLETS) ================== */
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 800px) {
     .container {
         width: var(--container-width-md);
     }
@@ -556,7 +556,7 @@ footer ul li a:hover {
     /* ================== FOOTER ================== */   
 
     .footer__container {
-        grid-template-columns: (4,1fr);        
+        grid-template-columns: 1fr 1fr;        
         text-align: center;
     }
 }
