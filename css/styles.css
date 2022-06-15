@@ -570,7 +570,7 @@ footer .marca-logo{
 }
 
 /* Propiedades de página responsiva en un ancho de hasta 700px*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1500px){
     /* Sustitución del valor de la variable de márgenes*/
     :root{
         --margenes:30px;
