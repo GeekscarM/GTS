@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
+    body {
+        /* background: linear-gradient(to right, #006572, #479099)*/
+        /*background: linear-gradient(to right, #003038, #03404b, #00424e)*/
+        background: linear-gradient(to right, rgb(110, 110, 110), #4b4b4b )
+    }
+
+    .resume {
+        width: 1100px;
+        background: #fff;
+        margin: 25px auto;
+        display: flex;
+        border-radius: 15px;
+    }
+    /*ENCABEZADOS BARRA IZQUIERDA*/
+    .title {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding-bottom: 10px;
+        color: #048BC2 ;
+        position: relative;
+        text-align: left;
+        margin-bottom: 15px;                
+        margin-top: 15px;
+    }
+    
+    .title:before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 100px;
+        height: 3px;
+        /*background: #9153c9;*/
+        background: #048BC2;
+    }
+    
+    .pb {
+        padding-bottom: 20px;
+    }
+    
+    .left {
+        /*background: #202632;*/
+        background: linear-gradient(to right,#210000, #212834);        
+        width: 300px;
+        padding: 0 10px;        
+    }
+    
+    .left .img_holder {
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    .left .img_holder img {
+        width: 50%;
+        border-radius: 10px;
+    }
+    
+    .left .icon {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .left .icon_big {
+        font-size: 25px;
+        color: #ffffff;
+    }
+    
+    .left .text {
+        color: #f3f3f3;        
+        font-size: 12px;        
+    }
+
+    .left .text_big {
+        color: #f3f3f3;        
+        font-weight: 600;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .link {
+        color: #ffffff;
+        text-decoration: none;
+        /*text-transform: lowercase;*/
+        font-size: 15px;        
+    }
+    
+    .contact .li_wrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    
+    .contact .li_wrap .icon {
+        width: 40px;
+        height: 40px;
+        background: #888888;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+    
+    .contact .li_wrap .text {
+        width: calc(100% - 50px);
+        word-break: break-word;        
+        color: #ffffff;
+        font-size: 16px;
+    }
+    
+    .contact .li_wrap:hover .text {
+        /*color: #9153c9;*/
+        color: #048BC2;
+        /*font-weight: bold;*/
+    }
+    
+    .link:hover {
+        /*color: #9153c9;*/
+        color: #048BC2;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
+    .right {
+        width: calc(100% - 300px);
+        background: linear-gradient(to right,#d4d4d6, #dfdde2);
+    }
+    /*Contenedor del lado derecho*/
+    
+    .skills_wrap{
+        width: 90%;                
+        margin: 0 auto;                        
+    }
+
+    .skills ul,
+    .education ul,
+    .education__cursos ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  
+    .skills .li_wrap {
+        width: 110px;
+        height: 80px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*background: #888888;*/
+        
+    }
+    
+    .skills .li_wrap .text,
+    .education .li_wrap .text,
+    .education__cursos .li_wrap .text {
+        margin-top: 5px;
+    }
+
+    .skills .li_wrap .icon{
+        margin-top: 5px;
+    }
+    
+    .skills .li_wrap .text {
+        font-weight: 700;
+        text-align: center;
+        word-break: break-word;        
+    }
+    
+    .education .li_wrap {
+        width: 270px;
+        height: 100px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #888888;        
+    }
+    
+    .education__cursos .li_wrap {
+        width: 130px;
+        height: 75px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #797979;
+    }
+    
+    .education .li_wrap .text {
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        font-size: 14px;
+    }
+          
+    .header {
+        /*background: #292b2f;*/
+        background:linear-gradient(to right, #036d97, #048BC2);
+        padding: 15px 30px;
+        color: #ffffff;
+        height: 240px;
+    }
+    
+    .header .name {
+        font-size: 45px;
+        font-weight: 700;
+        color: #ffffff;
+        /*-webkit-text-stroke: 2px #641ca3;*/        
+    }
+    
+    .header .role {
+        font-weight: 700;
+        font-size: 17px;
+        padding-top: 5px;                         
+    }
+
+    .header .role a{
+        text-decoration: none!important;      
+        color: #ffffff;   
+    }
+
+    .header .role:hover{
+        text-decoration: underline;
+    }
+    
+    .header .about {
+        font-weight: 200;
+        font-size: 18px;
+        margin-top: 20px;
+        line-height: 26px;        
+    }
+        
+    .title_historia,
+    .title_habilidades,
+    .title_capacitacion {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        padding-bottom: 10px;        
+        /*color: #641ca3;*/
+        color: #036d97;
+        position: relative;
+        text-align: right;
+        margin-bottom: 15px;
+        margin-top: 30px;        
+    }
+            
+    .title_historia:before,
+    .title_habilidades:before,
+    .title_capacitacion:before {
+        content: "";
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 100px;
+        height: 3px;
+        /*background: #641ca3;*/
+        background: #036d97;
+
+    }
+    .title_tipo_hab {
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 5px;        
+        color: #036d97;
+        position: relative;
+        text-align: center;
+        margin-bottom: 10px;                
+    }
+
+    .right_inner {
+        padding: 30px;                
+    }
+    
+    /*EXPERIENCIA*/
+    /*---------------------------------*/
+    .experiencia_contenedor .li_wrap {
+        display: flex;
+        margin-bottom: 60px;
+    }
+    
+    .experiencia_contenedor .li_wrap .date {
+        width: 125px;
+        color: #036d97;        
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    .experiencia_contenedor .li_wrap .info {
+        width: calc(100% - 125px);
+        padding-left: 25px;
+        position: relative;
+    }
+
+    .experiencia_contenedor .li_wrap .company_name img{
+        width: 80px;
+    }
+    
+    .experiencia_contenedor .li_wrap .info_title {
+        text-transform: uppercase;
+        font-weight: bold;        
+        letter-spacing: 2px;
+        color: #036d97;
+    }
+    
+    .experiencia_contenedor .li_wrap .info_title:hover {
+        background: #048BC2;
+        color: #ffffff;
+        border-radius: 15px;
+        text-align: center;          
+    }
+    
+    .experiencia_contenedor .li_wrap .info_com {
+        color: #036d97;
+        font-weight: 600;
+        font-size: 14px;
+        margin-top: 3px;
+        text-decoration: none;
+    }    
+
+    .experiencia_contenedor .li_wrap .info_com:hover {
+        text-decoration: underline;
+    }
+    
+    .experiencia_contenedor .li_wrap .info_cont {
+        color: #036d97;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    
+    .experiencia_contenedor .li_wrap .info:before {
+        content: "";
+        position: absolute;
+        top: 3px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background: #036d97;
+        border-radius: 50%;
+    }
+    
+    .experiencia_contenedor .li_wrap .info:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 4px;
+        width: 2px;
+        height: 90%;
+        background: #036d97;
+    }
+
+    
+
+    /*HABILIDADES*/
+    /*---------------------------------*/
+    .habilidades_contenedor {
+        padding-bottom: 10px;
+    }
+    
+    .habilidades_tecnicas_contenedor{
+        width: 45%;
+        float: left;        
+    }
+
+    .habilidades_laborales_contenedor{
+        width: 45%;
+        float: right;        
+    }
+    
+    .habilidades_tecnicas ul{
+        display: inline-flex;        
+        flex-wrap: wrap;        
+        justify-content: space-around;
+    }
+
+    .habilidades_laborales ul{
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+        
+    .habilidades_tecnicas .li_wrap,
+    .habilidades_laborales .li_wrap {
+        width: 90px;
+        height: 75px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #036d97;
+    }
+    
+    .habilidades_tecnicas .li_wrap .text,
+    .habilidades_laborales .li_wrap .text {
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        font-size: 12px;
+    }
+    
+    .habilidades_tecnicas .li_wrap .icon,
+    .habilidades_laborales .li_wrap .icon {
+        color: #ffffff;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+    }
+    
+    .habilidades_tecnicas .li_wrap:hover,
+    .habilidades_laborales .li_wrap:hover {
+        background: #d4d4d6;
+        border: 2pt solid #036d97;
+        cursor: default;
+    }
+    
+    .habilidades_tecnicas .li_wrap:hover .text,
+    .habilidades_laborales .li_wrap:hover .text {
+        color: #036d97;
+        cursor: default;
+    }
+    
+    .habilidades_tecnicas .li_wrap:hover .icon,
+    .habilidades_laborales .li_wrap:hover .icon {
+        color: #036d97;
+        cursor: default;
+    }
+
+    .habilidades_tecnicas .li_wrap .text,
+    .habilidades_laborales .li_wrap .text {
+        margin-top: 10px;
+    }
+
+    
+    /*CAPACITACION*/
+    /*---------------------------------*/    
+    .capacitacion_contenedor {        
+        margin: 0 auto;        
+        border-radius: 15px;
+    }
+
+    .capacitacion_cursos ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .capacitacion_cursos .li_wrap .text {
+        margin-top: 10px;
+    }
+    
+    .capacitacion_cursos .li_wrap {
+        width: 130px;
+        height: 75px;
+        margin-bottom: 10px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #036d97;
+    }
+    
+    .capacitacion_cursos .li_wrap .text {
+        color: #036d97;
+        text-align: center;
+        display: flex;
+        font-size: 12px;
+    }
+    
+    .capacitacion_cursos .li_wrap .icon {
+        color: #036d97;
+        text-align: center;
+        display: flex;
+        font-size: 20px;
+    }
+    
+    .capacitacion_cursos .li_wrap:hover {
+        background: #036d97;
+        cursor: default;
+    }
+    
+    .capacitacion_cursos .li_wrap:hover .text {
+        color: #ffffff;
+        cursor: default;
+    }
+    
+    .capacitacion_cursos .li_wrap:hover .icon {
+        color: #ffffff;
+        cursor: default;
+    }
+
+    .capacitacion_cursos .li_wrap .text {
+        margin-top: 10px;
+    }
+
+    /*TOOLTIP*/
+    /*---------------------------------*/    
+    #tooltip{
+        position: relative;
+        cursor: pointer;          
+    }
+
+    #tooltipText{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        text-align: center;
+        font-size: 13px;
+        background-color: #000;
+        color: #fff;
+        white-space: nowrap;
+        padding: 10px 15px;
+        border-radius: 7px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    #tooltipText::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        transform:translateX(-50%);
+        border: 15px solid;
+        border-color: #000 #0000 #0000 #0000;        
+    }
+
+    #tooltip:hover #tooltipText{
+        top: -65%;
+        visibility: visible;
+        opacity: 1;
+        cursor: default;
+    }  
+   
