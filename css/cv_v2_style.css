@@ -248,6 +248,41 @@
         margin-top: 20px;
         line-height: 26px;        
     }
+
+    /*lOGROS*/
+    /*---------------------------------*/ 
+    .achievement .li_wrap {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 18px;
+    }
+    
+    .achievement .li_wrap .icon {
+        width: 40px;
+        height: 40px;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+    
+    .achievement .li_wrap .achievement_name {
+        width: calc(100% - 5px);
+        word-break: break-word;        
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 15px;
+    }
+
+    
+    .achievement .li_wrap:hover .achievement_name,
+    .achievement .li_wrap:hover .icon {
+        /*color: #9153c9;*/
+        color: #048BC2;
+        /*font-weight: bold;*/
+    }
         
     .title_historia,
     .title_habilidades,
