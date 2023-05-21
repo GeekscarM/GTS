@@ -3,7 +3,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        list-style: none;
+        /*list-style: none;*/
         font-family: 'Ubuntu', sans-serif;
     }
     
@@ -94,6 +94,10 @@
         /*text-transform: lowercase;*/
         font-size: 15px;        
     }
+
+    .contact ul {
+        list-style: none;
+    }
     
     .contact .li_wrap {
         display: flex;
@@ -150,6 +154,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        list-style: none;        
     }
   
     .skills .li_wrap {
@@ -251,6 +256,10 @@
 
     /*lOGROS*/
     /*---------------------------------*/ 
+    .achievement ul {
+        list-style: none;
+    }
+    
     .achievement .li_wrap {
         display: flex;
         align-items: center;
@@ -330,6 +339,11 @@
     
     /*EXPERIENCIA*/
     /*---------------------------------*/
+
+    .experiencia_contenedor .job_list li {
+        list-style: none;
+    }
+    
     .experiencia_contenedor .li_wrap {
         display: flex;
         margin-bottom: 60px;
@@ -381,7 +395,13 @@
     .experiencia_contenedor .li_wrap .info_cont {
         color: #036d97;
         font-weight: 500;
-        margin-top: 15px;
+        margin-top: 15px;     
+        padding-left: 5px;    
+        text-align: justify;   
+    }
+
+    .experiencia_contenedor .job_list .li_wrap .info .info_cont li {
+        list-style:square;
     }
     
     .experiencia_contenedor .li_wrap .info:before {
@@ -427,12 +447,14 @@
         display: inline-flex;        
         flex-wrap: wrap;        
         justify-content: space-around;
+        list-style:none;
     }
 
     .habilidades_laborales ul{
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        list-style:none;
     }
         
     .habilidades_tecnicas .li_wrap,
@@ -500,6 +522,7 @@
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        list-style:none;
     }
 
     .capacitacion_cursos .li_wrap .text {
