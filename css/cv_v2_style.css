@@ -233,8 +233,8 @@
     }
     
     .header .role {
-        font-weight: 700;
-        font-size: 17px;
+        font-weight: 500;
+        font-size: 14px;
         padding-top: 5px;                         
     }
 
@@ -248,8 +248,8 @@
     }
     
     .header .about {
-        font-weight: 150;
-        font-size: 14px;
+        font-weight: 140;
+        font-size: 12px;
         margin-top: 20px;
         line-height: 26px;        
     }
