@@ -192,7 +192,7 @@ width: 400px;
 }
 /* Propiedades de cada una de las cards a utilizarse dentro de las Áreas de Trabajo */
 .content-card{
-    width: 22%;
+    width: 24%;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     overflow: hidden;
     height: 500px;   
