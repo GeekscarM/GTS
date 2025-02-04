@@ -7,3 +7,122 @@ body {
     margin: 0;
 }
 
+nav {
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navTopLogo {
+    width: 120px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #444;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchInput {
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder {
+    color: lightgray;
+}
+
+.navTopMessage{
+    font-size: 20px;
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+}
+
+.navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+}
+.slider{
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.sliderImage{
+    z-index: 1;
+}
+
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+    }
+
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.infoButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.infoButton:hover{
+    background-color: white;
+    color: black;
+}
