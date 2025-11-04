@@ -1,0 +1,5 @@
+Agregar:
+
+- Procesos actual de AA (Lista)
+- Turnos (Lista)
+- Alergias (Campo de texto)

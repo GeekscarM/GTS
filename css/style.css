@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --blue:#2980b9;
+    --blue_gray: #5993b8;
+    --red: tomato;
+    --orange:orange;
+    --black:#333;
+    --white:#ffffff;
+    --bg-color:#eee;
+    --dark-bg:rgba(0,0,0,.7);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --squid-ink: #232f3e;
+    --prime-blue: #1a98ff;
+    --border:.1rem solid #999;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background: #eee
+}
+
+
+/* ---------------------------------------- INDEX ----------------------------------------*/
+
+
+/* ---------------------------------------- INDEX -> Form Container*/
+.form-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding-bottom: 1rem  ;
+    padding-top: 1rem  ;
+    background: #eee
+}
+
+.form-container form {    
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background: #fff; 
+    text-align: center;  
+    width: 110rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.form-container form h2{
+    font-size: 2.5em;    
+    margin-bottom: 10px;    
+    color: var(--squid-ink);    
+}
+
+.form-container form p{
+    font-size: 1.9em;   
+    font-weight: 500; 
+    margin-bottom: 10px;
+    color: var(--prime-blue);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-container form input,
+.form-container form .reason,
+.form-container form .form_select{
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 1.8em;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background: #eee;
+    border-radius: 5px;
+    resize: none;
+    text-align: center;    
+}
+
+.form-container form textarea {
+    width: 80%;
+    padding: 10px 15px;
+    font-size: 1.8em;
+    margin: 8px 0;
+    background: #eee;
+    border-radius: 5px;
+    resize: none;
+    text-align: center;
+}
+
+.form-container form .action_button{    
+    background-color: #fff;
+    width: 10%;
+    cursor: pointer;
+}
+
+.form-container form .submit-form-btn {
+    background: var(--prime-blue);
+    color: white;    
+    font-size: 20px;        
+    width: 20rem;            
+    margin: 3rem 0;    
+    border-radius: 10px;    
+    cursor: pointer;
+    text-align: center; 
+    margin-bottom: 5rem;
+}
+
+.form-container form h3{
+    font-size: 1.8em;    
+    margin-bottom: 10px;    
+    color: gray;  
+}
+
+.form-container form .msg_omr_na {
+    font-size: 1.7em;       
+    font-weight: 500; 
+    margin-bottom: 10px;    
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--blue_gray);    
+}
+
